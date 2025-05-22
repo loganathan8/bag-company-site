@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+body {
+  line-height: 1.6;
+  background: #f8f8f8;
+  color: #333;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+header {
+  background: #000;
+  color: #fff;
+  padding: 1rem 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.hero {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+.hero .btn {
+  background: #ff6b6b;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.products {
+  padding: 3rem 0;
+  background: #fff;
+}
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product {
+  background: #f4f4f4;
+  padding: 1rem;
+  flex: 1 1 calc(33% - 2rem);
+  text-align: center;
+  border-radius: 8px;
+}
+.product img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.about, .contact {
+  padding: 3rem 0;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact input, .contact textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+.contact button {
+  padding: 0.7rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.whatsapp-btn:hover {
+  background-color: #1ebd5b;
+}
+@media (max-width: 768px) {
+  .product-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav a {
+    margin: 0.5rem 0;
+  }
+}
